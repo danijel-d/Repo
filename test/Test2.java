@@ -30,11 +30,12 @@ Ukoliko student nije polozio,
 			}
 			int n = sc.nextInt();
 			if (n == 0) {
-				System.out.println("Nema logike uneti '0' pitanja");
+				System.out.println("Nema logike uneti '0' pitanja, probajte ponovo :");
+				n = sc.nextInt();
 			}
 			if (n < 0) {
-				System.out.println("Nema logike unositi negativan broj pitanja, unesite pozitivan broj :");
-			}
+				System.out.println("Nema logike unositi negativan broj pitanja,\nunesite pozitivan 								broj:");				
+			n = sc.nextInt();			}
 			test = new String[n];
 			System.out.println(n);
 			unesiImePrstudenta(test);
